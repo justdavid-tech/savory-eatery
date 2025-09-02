@@ -1,0 +1,139 @@
+ @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&display=swap");
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .floating-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 12s ease-in-out infinite;
+        }
+        
+         .seo {
+        font-family: "Caprasimo", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(45deg, #d4a574, #c4915c);
+            top: -10%;
+            left: -5%;
+            animation-delay: 0s;
+        }
+        
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, #6b7280, #4b5563);
+            bottom: -15%;
+            right: -10%;
+            animation-delay: -6s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            33% { transform: translateY(-30px) translateX(20px); }
+            66% { transform: translateY(10px) translateX(-10px); }
+        }
+        
+        .glass-card {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #d4a574 0%, #c4915c 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 165, 116, 0.3);
+        }
+        
+        .food-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.3s; }
+        .stagger-3 { animation-delay: 0.5s; }
+        .stagger-4 { animation-delay: 0.7s; }
+        
+        .navbar-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 10, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .accent-gold {
+            color: #d4a574;
+        }
+        
+        .bg-accent-gold {
+            background-color: #d4a574;
+        }
+        
+        .border-accent-gold {
+            border-color: #d4a574;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #d4a574 0%, #f4e4c1 50%, #d4a574 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(212, 165, 116, 0.6);
+            border-radius: 50%;
+            animation: particle-drift 8s linear infinite;
+        }
+        
+        @keyframes particle-drift {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateY(-10vh) translateX(50px);
+                opacity: 0;
+            }
+        }

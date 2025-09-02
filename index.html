@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Savory - Fine Dining Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="navbar-blur fixed w-full z-50 px-6 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-bold text-gradient">Savory</div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Menu</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Reservations</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+            
+            <button class="bg-accent-gold text-black px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300">
+                Book Table
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-gradient min-h-screen relative flex items-center justify-center pt-20">
+        <!-- Subtle floating elements -->
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        
+        <!-- Particles -->
+        <div id="particles-container" class="absolute inset-0 overflow-hidden pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <div class="fade-in-up stagger-1">
+                        <span class="inline-block text-accent-gold text-sm font-medium tracking-wider uppercase mb-4">
+                            Fine Dining Experience
+                        </span>
+                    </div>
+                    
+                    <h1 class="fade-in-up stagger-2 text-5xl lg:text-7xl font-bold text-white mb-6 seo leading-tight">
+                        Exceptional
+                        <span class="text-gradient block seo">Culinary Journey</span>
+                    </h1>
+                    
+                    <p class="fade-in-up stagger-3 text-lg text-gray-300 mb-8 leading-relaxed max-w-lg">
+                        Experience refined dining where every dish is crafted with passion, precision, and the finest ingredients from around the world.
+                    </p>
+                    
+                    <div class="fade-in-up stagger-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="cta-button text-white font-semibold py-4 px-8 rounded-full text-lg">
+                            View Menu
+                        </button>
+                        
+                        <button class="glass-card text-white font-semibold py-4 px-8 rounded-full text-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300">
+                            Learn More
+                        </button>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="fade-in-up stagger-4 grid grid-cols-3 gap-8 mt-16 text-center lg:text-left">
+                        <div>
+                            <div class="text-3xl font-bold text-white mb-1">25k+</div>
+                            <div class="text-sm text-gray-400 uppercase tracking-wider">Guests Served</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent-gold mb-1">4.8★</div>
+                            <div class="text-sm text-gray-400 uppercase tracking-wider">Rating</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-white mb-1">12</div>
+                            <div class="text-sm text-gray-400 uppercase tracking-wider">Years</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Food Showcase -->
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Featured Dish -->
+                        <div class="food-card glass-card rounded-2xl p-6 col-span-2 cursor-pointer">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-accent-gold text-black px-3 py-1 rounded-full text-xs font-semibold">
+                                    Chef's Signature
+                                </span>
+                                <div class="text-accent-gold">★★★★★</div>
+                            </div>
+                            <div class="w-full h-40 rounded-xl mb-4 overflow-hidden relative bg-gradient-to-br from-gray-800 to-gray-900">
+                                <img src="img/food (2).jpeg" alt="Wagyu Beef Wellington" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">NIgeria Jollof Rice</h3>
+                            <p class="text-gray-300 text-sm mb-3">
+                                Vibrant, flavorful dish made with long-grain rice, tomatoes, peppers, and aromatic spices.
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold text-accent-gold">$95</span>
+                                <button class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors duration-300">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Side Items -->
+                        <div class="food-card glass-card rounded-xl p-4 cursor-pointer">
+                            <div class="w-full h-24 rounded-lg mb-3 overflow-hidden relative bg-gradient-to-br from-gray-800 to-gray-700">
+                                <img src="img/food (1).jpeg" alt="Garden Fresh Salad" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <h4 class="text-white font-semibold mb-1 text-sm">Milkshake</h4>
+                            <p class="text-gray-400 text-xs mb-2">sweet beverage made by blending milk, ice cream, and flavorings or sweeteners</p>
+                            <span class="text-accent-gold font-semibold text-sm">$28</span>
+                        </div>
+                        
+                        <div class="food-card glass-card rounded-xl p-4 cursor-pointer">
+                            <div class="w-full h-24 rounded-lg mb-3 overflow-hidden relative bg-gradient-to-br from-gray-800 to-gray-700">
+                                <img src="img/food (3).jpeg" alt="Wine Pairing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            <h4 class="text-white font-semibold mb-1 text-sm">Cake</h4>
+                            <p class="text-gray-400 text-xs mb-2">sweetened baked food, usually made with flour, eggs, sugar, and a leavening agent. </p>
+                            <span class="text-accent-gold font-semibold text-sm">$15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 text-center">
+            <div class="w-5 h-8 border border-gray-400 rounded-full relative mx-auto opacity-60">
+                <div class="w-1 h-2 bg-gray-400 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
