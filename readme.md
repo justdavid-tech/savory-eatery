@@ -3,7 +3,7 @@
 A modern, responsive, and elegant landing page for a fictional restaurant, "Savory Eatery." Built with a focus on performance, aesthetics, and user experience to effectively convert visitors into customers. Just a landing page😀😀
 
 ## 🚀 Live Demo
-[View the live website here](http://www.savoryeatery.com/) 
+[View the live website here](https://justdavid-tech.github.io/savory-eatery/) 
 
 ## ✨ Features
 
